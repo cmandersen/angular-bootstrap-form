@@ -1,4 +1,4 @@
-angular.module('bootstrap.form', [])
+angular.module('bootstrap.form.text', [])
     .directive('inputText', [function() {
         return {
             restrict: 'EA',
@@ -6,11 +6,12 @@ angular.module('bootstrap.form', [])
             replace: true,
             scope: {
                 title: '@',
-                name: '@'
+                name: '@',
+                model: '='
             },
             template: "<div class='form-group'>" +
                 "<label for='{{ name }}'>{{ title }}</label>" +
-                "<input type='text' name='{{ name }}' id='{{ name }}' class='form-control' placeholder='{{ title }}'>" +
+                "<input type='text' ng-model='model' name='{{ name }}' id='{{ name }}' class='form-control' placeholder='{{ title }}'>" +
                 "</div>"
         };
     }]);
