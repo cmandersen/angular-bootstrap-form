@@ -1,0 +1,11 @@
+{
+  "name": "angular-bootstrap-form",
+  "version": "1.0.0",
+  "description": "An Angular module containing directives for quickly generate form input fields",
+  "author": "Christian Morgan Andersen",
+  "devDependencies": {
+    "gulp-uglify": "~0.3.1",
+    "gulp": "~3.8.7",
+    "gulp-concat": "~2.3.4"
+  }
+}
