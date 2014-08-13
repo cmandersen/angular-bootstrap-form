@@ -6,8 +6,11 @@
 </head>
 <body>
 <div class="container">
-    <form action="#">
-        <input-text title="Text" name="text"></input-text>
+    <form action="#" name="form">
+        <input-text model="text" title="Text" name="text"></input-text>
+        <input-email model="email" title="Email" name="email"></input-email>
+        <input-password model="password" title="Password" name="password"></input-password>
+        <input-file model="file" title="File" name="file"></input-file>
     </form>
 </div>
 
@@ -15,7 +18,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
-    <script src="/src/fields/text.js"></script>
+    <script src="/dist/angular-bootstrap-form.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
